@@ -94,7 +94,7 @@ export default function CustomForm() {
             Nombre y apellido:
           </label>
           <input
-            className=" form-input border-2 rounded-md py-1 px-2 w-full"
+            className=" form-input border-2 rounded-md py-1 px-2 w-full text-zinc-800"
             {...register("name", {
               required: {
                 value: true,
@@ -128,7 +128,7 @@ export default function CustomForm() {
             <PhoneInput />
             <input
               placeholder={flag.placeholder}
-              className="pl-2  w-full py-1 px-2"
+              className="pl-2  w-full py-1 px-2 text-zinc-800"
               {...register("phone", {
                 required: {
                   value: true,
@@ -162,7 +162,7 @@ export default function CustomForm() {
             Correo electrónico:
           </label>
           <input
-            className=" form-input form-control rounded-md border-2 w-full py-1 px-2"
+            className=" form-input form-control rounded-md border-2 w-full py-1 px-2 text-zinc-800"
             {...register("email", {
               required: {
                 value: true,

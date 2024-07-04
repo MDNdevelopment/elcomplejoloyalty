@@ -83,7 +83,7 @@ export default function PhoneInput() {
       className="cursor-pointer pl-2 pr-2 relative flex flex-row items-center"
     >
       <Flag country={flag.key} className="mr-1" />
-      <p className={``}>{flag.code}</p>
+      <p className={`text-zinc-800`}>{flag.code}</p>
       {showFlagList && (
         <ul className="overflow-y-scroll max-h-[15rem] flex flex-col justify-center items-left absolute top-full left-0 bg-gray-100 w-[15rem] rounded-b-lg">
           {countries.map((country) => (
@@ -96,8 +96,8 @@ export default function PhoneInput() {
               }}
             >
               <Flag className="mr-2" key={country.key} country={country.key} />
-              <p className="mr-1 text-black">{country.label}</p>
-              <p className=" text-secondary font-bold">+{country.code}</p>
+              <p className="mr-1 text-zinc-800">{country.label}</p>
+              <p className=" text-primary-600 font-bold">+{country.code}</p>
             </li>
           ))}
         </ul>
